@@ -2,6 +2,7 @@
 /.idea
 /.build
 /.build/reports
+/gradle
 
 gradlew
 gradlew.bat
