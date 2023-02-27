@@ -4,6 +4,7 @@
 /.build/reports
 /gradle
 !**/src/test/**
+!**/src/test/resources**
 
 gradlew
 gradlew.bat
