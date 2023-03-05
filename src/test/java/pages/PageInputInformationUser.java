@@ -1,7 +1,7 @@
 package pages;
 
-import pages.Components.CalendarComponent;
-import pages.Components.WindowResultRegistrationComponent;
+import pages.components.CalendarComponent;
+import pages.components.WindowResultRegistrationComponent;
 
 import static com.codeborne.selenide.Selectors.byText;
 

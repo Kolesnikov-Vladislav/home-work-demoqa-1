@@ -1,4 +1,4 @@
-package pages.Components;
+package pages.components;
 
 import static com.codeborne.selenide.Selectors.by;
 import static com.codeborne.selenide.Selectors.byText;
