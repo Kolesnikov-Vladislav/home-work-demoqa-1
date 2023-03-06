@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class PageInputInformationUser extends ElementDirectory{
     CalendarComponent calendarComponent = new CalendarComponent();
-    WindowResultRegistrationComponent WindowResultRegistrationComponent = new WindowResultRegistrationComponent();
+    WindowResultRegistrationComponent windowResultRegistrationComponent = new WindowResultRegistrationComponent();
     public PageInputInformationUser openPageInputInformationUser(){
         open("https://demoqa.com/automation-practice-form");
         return this;
@@ -73,7 +73,7 @@ public class PageInputInformationUser extends ElementDirectory{
         return this;
     }
     public PageInputInformationUser checkupWindowResultRegistration(String key, String value){
-        WindowResultRegistrationComponent.checkupWindowResultRegistration(key, value);
+        windowResultRegistrationComponent.checkupWindowResultRegistration(key, value);
         return this;
     }
 

@@ -11,8 +11,6 @@ public class DemoQaTest {
     static void beforeAll() {
         Configuration.browserSize = "1680x1050";
     }
-
-    //Configuration.browserSize = "1920*1080";
     @Test
         void demoQaTest() {
         pageInputInformationUser.openPageInputInformationUser()
@@ -41,26 +39,5 @@ public class DemoQaTest {
                 .checkupWindowResultRegistration("Address", "Moscow never sleep")
                 .checkupWindowResultRegistration("State and City", "NCR Delhi")
                         .buttonCloseFormResult();
-
-
-
-
-
-
-
-
-        //Проверка
-        //$(".modal-body").shouldHave(text("TestFirstName TestLastName"));
-        //$(".modal-body").shouldHave(text("testUserEmail@test.ru"));
-        //$(".modal-body").shouldHave(text("Male"));
-        //$(".modal-body").shouldHave(text("1735342525"));
-        //$(".modal-body").shouldHave(text("27 January "));
-        //$(".modal-body").shouldHave(text("History"));
-        //$(".modal-body").shouldHave(text("Music"));
-        //$(".modal-body").shouldHave(text("ToolForm.png"));
-        //$(".modal-body").shouldHave(text("Moscow never sleep"));
-        //$(".modal-body").shouldHave(text("NCR Delhi"));
-        //$("#closeLargeModal").click();
-
     }
 }
