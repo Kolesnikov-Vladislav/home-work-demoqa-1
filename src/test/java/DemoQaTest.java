@@ -14,12 +14,12 @@ public class DemoQaTest {
     @Test
         void demoQaTest() {
         pageInputInformationUser.openPageInputInformationUser()
-                .inputFirstNameUser("TestFirstName")
-                .inputLastNameUser("TestLastName")
-                .inputUserEmail("testUserEmail@test.ru")
-                .inputGenderWrapper("Male")
-                .inputUserNumber("1735342525")
-                .openInputDateOfBirth()
+                .firstNameInput("TestFirstName")
+                .lastNameInput("TestLastName")
+                .userEmailInput("testUserEmail@test.ru")
+                .genderWrapperInput("Male")
+                .userNumberInput("1735342525")
+                .DateOfBirthOpen()
                 .inputDateOfBirth("27", "January", "1996")
                 .choiceSubjects("History")
                 .choiceHobbies("Music")

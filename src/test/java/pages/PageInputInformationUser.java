@@ -5,37 +5,38 @@ import pages.components.WindowResultRegistrationComponent;
 
 import static com.codeborne.selenide.Selectors.byText;
 
+import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class PageInputInformationUser extends ElementDirectory{
+public class PageInputInformationUser  {
     CalendarComponent calendarComponent = new CalendarComponent();
     WindowResultRegistrationComponent windowResultRegistrationComponent = new WindowResultRegistrationComponent();
     public PageInputInformationUser openPageInputInformationUser(){
         open("https://demoqa.com/automation-practice-form");
         return this;
     }
-    public PageInputInformationUser inputFirstNameUser(String value){
-        inputFirstName.setValue(value);
+    public PageInputInformationUser firstNameInput(String value){
+        $("#firstName").setValue(value);
         return this;
     }
-    public PageInputInformationUser inputLastNameUser(String value){
-        inputlastName.setValue(value);
+    public PageInputInformationUser lastNameInput(String value){
+        $("#lastName").setValue(value);
         return this;
     }
-    public PageInputInformationUser inputUserEmail(String value){
-        inputUserEmail.setValue(value);
+    public PageInputInformationUser userEmailInput(String value){
+        $("#userEmail").setValue(value);
         return this;
     }
-    public PageInputInformationUser inputGenderWrapper(String value){
-        inputGenderWrapper.$(byText(value)).click();
+    public PageInputInformationUser genderWrapperInput(String value){
+        $("#genterWrapper").$(byText(value)).click();
         return this;
     }
-    public PageInputInformationUser inputUserNumber(String value){
-        inputUserNumber.setValue(value);
+    public PageInputInformationUser userNumberInput(String value){
+        $("#userNumber").setValue(value);
         return this;
     }
-    public PageInputInformationUser openInputDateOfBirth(){
-        openInputDateOfBirth.click();
+    public PageInputInformationUser DateOfBirthOpen(){
+        $("#dateOfBirthInput").click();
         return this;
     }
     public PageInputInformationUser inputDateOfBirth(String day, String month, String year){
@@ -43,33 +44,33 @@ public class PageInputInformationUser extends ElementDirectory{
         return this;
     }
     public PageInputInformationUser choiceSubjects(String value){
-        choiceSubjects.setValue(value).pressEnter();
+        $("#subjectsInput").setValue(value).pressEnter();
         return this;
     }
     public PageInputInformationUser choiceHobbies(String value){
-        choiceHobbies.$(byText(value)).click();
+        $("#hobbiesWrapper").$(byText(value)).click();
         return this;
     }
     public PageInputInformationUser uploadPictureInForm(String value){
-        uploadPictureInForm.uploadFromClasspath(value);
+        $("#uploadPicture").uploadFromClasspath(value);
         return this;
     }
     public PageInputInformationUser currentAddressInForm(String value){
-        currentAddressInForm.setValue(value);
+        $("#currentAddress").setValue(value);
         return this;
     }
     public PageInputInformationUser openListState(String value){
-        openListState.click();
-        openListState.$(byText(value)).click();
+        $("#state").click();
+        $("#state").$(byText(value)).click();
         return this;
     }
     public PageInputInformationUser openListCity(String value){
-        openListCity.click();
-        openListCity.$(byText(value)).click();
+        $("#city").click();
+        $("#city").$(byText(value)).click();
         return this;
     }
     public PageInputInformationUser buttonSubmit(){
-        buttonSubmit.click();
+        $("#submit").click();
         return this;
     }
     public PageInputInformationUser checkupWindowResultRegistration(String key, String value){
@@ -78,7 +79,7 @@ public class PageInputInformationUser extends ElementDirectory{
     }
 
     public PageInputInformationUser buttonCloseFormResult(){
-        buttonCloseFormResult.click();
+        $("#closeLargeModal").click();
         return this;
     }
 
