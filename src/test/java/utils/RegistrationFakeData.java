@@ -1,6 +1,5 @@
 package utils;
 
-import com.github.javafaker.Faker;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.ThreadLocalRandom;

@@ -14,20 +14,22 @@ public class FakeData {
     String[] month = {"January", "February ", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"};
     String[] city = {"Delhi", "Gurgaon", "Noida"};
+    String state = "NCR";
+    String pictureStatic = "pictures/ToolForm.png";
+    String picture = "ToolForm.png";
 
-    public void fakeDataForRegistration(){
-        String firstNameFake = faker.name().firstName(),
-                lastNameFake = faker.name().lastName(),
-                userEmailFake = faker.internet().emailAddress(),
-                genderWrapperFake = randomArray(gender),
-                userNumberFake = "+7" + randomInteger(10000000, 99999999),
-                choiceSubjectsFake = randomArray(subjects),
-                choiceHobbiesFake = randomArray(hobbies),
-                currentAddressInFormFake = faker.address().fullAddress(),
-                dayFake = String.valueOf(randomInteger(1, 28)),
-                monthFake = randomArray(month),
-                yearFake = String.valueOf(randomInteger(1990, 2000));
-        String state = "NCR";
-        String cityFake = randomArray(city);
-    }
+    String cityFake = randomArray(city);
+    String firstNameFake = faker.name().firstName(),
+            lastNameFake = faker.name().lastName(),
+            userEmailFake = faker.internet().emailAddress(),
+            genderWrapperFake = randomArray(gender),
+            userNumberFake = String.valueOf(randomInteger(1000000000, 1100000000)),
+            choiceSubjectsFake = randomArray(subjects),
+            choiceHobbiesFake = randomArray(hobbies),
+            currentAddressInFormFake = faker.address().fullAddress(),
+            dayFake = String.valueOf(randomInteger(1, 28)),
+            monthFake = randomArray(month),
+            yearFake = String.valueOf(randomInteger(1990, 2000));
+
 }
+

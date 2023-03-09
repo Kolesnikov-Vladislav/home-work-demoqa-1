@@ -58,8 +58,8 @@ public class PageInputInformationUser extends RegistrationFakeData {
         $("#hobbiesWrapper").$(byText(value)).click();
         return this;
     }
-    public PageInputInformationUser uploadPictureInForm(){
-        $("#uploadPicture").uploadFromClasspath("pictures/ToolForm.png");
+    public PageInputInformationUser uploadPictureInForm(String value){
+        $("#uploadPicture").uploadFromClasspath(value);
         return this;
     }
     public PageInputInformationUser currentAddressInForm(String value){
@@ -89,5 +89,4 @@ public class PageInputInformationUser extends RegistrationFakeData {
         $("#closeLargeModal").click();
         return this;
     }
-
 }
