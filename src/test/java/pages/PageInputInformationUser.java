@@ -42,7 +42,7 @@ public class PageInputInformationUser extends RegistrationFakeData {
         $("#userNumber").setValue(value);
         return this;
     }
-    public PageInputInformationUser DateOfBirthOpen(){
+    public PageInputInformationUser dateOfBirthOpen(){
         $("#dateOfBirthInput").click();
         return this;
     }

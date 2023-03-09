@@ -11,7 +11,7 @@ public class DemoQaTest extends FakeData{
                 .userEmailInput(userEmailFake)
                 .genderWrapperInput(genderWrapperFake)
                 .userNumberInput(userNumberFake)
-                .DateOfBirthOpen()
+                .dateOfBirthOpen()
                 .inputDateOfBirth(dayFake, monthFake, yearFake)
                 .choiceSubjects(choiceSubjectsFake)
                 .choiceHobbies(choiceHobbiesFake)
