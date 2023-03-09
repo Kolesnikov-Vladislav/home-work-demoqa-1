@@ -1,16 +1,23 @@
 package pages;
 
+import com.codeborne.selenide.Configuration;
+import org.junit.jupiter.api.BeforeAll;
 import pages.components.CalendarComponent;
 import pages.components.WindowResultRegistrationComponent;
+import utils.RegistrationFakeData;
 
 import static com.codeborne.selenide.Selectors.byText;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class PageInputInformationUser  {
+public class PageInputInformationUser extends RegistrationFakeData {
     CalendarComponent calendarComponent = new CalendarComponent();
     WindowResultRegistrationComponent windowResultRegistrationComponent = new WindowResultRegistrationComponent();
+    @BeforeAll
+    static void beforeAll() {
+        Configuration.browserSize = "1680x1050";
+    }
     public PageInputInformationUser openPageInputInformationUser(){
         open("https://demoqa.com/automation-practice-form");
         return this;
@@ -51,8 +58,8 @@ public class PageInputInformationUser  {
         $("#hobbiesWrapper").$(byText(value)).click();
         return this;
     }
-    public PageInputInformationUser uploadPictureInForm(String value){
-        $("#uploadPicture").uploadFromClasspath(value);
+    public PageInputInformationUser uploadPictureInForm(){
+        $("#uploadPicture").uploadFromClasspath("pictures/ToolForm.png");
         return this;
     }
     public PageInputInformationUser currentAddressInForm(String value){
