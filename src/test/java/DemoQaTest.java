@@ -1,10 +1,14 @@
 
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 public class DemoQaTest extends FakeData{
-
+    @Tag("BLOCK")
     @Test
         void demoQaTest() {
+        SelenideLogger.addListener("allure", new AllureSelenide());
         pageInputInformationUser.openPageInputInformationUser()
                 .firstNameInput(firstNameFake)
                 .lastNameInput(lastNameFake)
