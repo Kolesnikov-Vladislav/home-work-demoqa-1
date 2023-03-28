@@ -7,6 +7,7 @@ import pages.components.CalendarComponent;
 import pages.components.WindowResultRegistrationComponent;
 import utils.RegistrationFakeData;
 
+import static com.codeborne.selenide.Configuration.browser;
 import static com.codeborne.selenide.Selectors.byText;
 
 import static com.codeborne.selenide.Selenide.$;
@@ -18,6 +19,7 @@ public class PageInputInformationUser extends RegistrationFakeData {
     @BeforeAll
     public static void beforeAll() {
         Configuration.browserSize = "1680x1050";
+        Configuration.browser = "Chrome";
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
     }
     @Step("Открываем страницу 'DemoQA.com/automation-practice-form'")
