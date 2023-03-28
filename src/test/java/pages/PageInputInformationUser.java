@@ -16,8 +16,9 @@ public class PageInputInformationUser extends RegistrationFakeData {
     CalendarComponent calendarComponent = new CalendarComponent();
     WindowResultRegistrationComponent windowResultRegistrationComponent = new WindowResultRegistrationComponent();
     @BeforeAll
-    static void beforeAll() {
+    public static void beforeAll() {
         Configuration.browserSize = "1680x1050";
+        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
     }
     @Step("Открываем страницу 'DemoQA.com/automation-practice-form'")
     public PageInputInformationUser openPageInputInformationUser(){
