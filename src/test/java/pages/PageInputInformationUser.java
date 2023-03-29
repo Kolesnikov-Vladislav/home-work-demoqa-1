@@ -76,13 +76,13 @@ public class PageInputInformationUser {
     }
     @Step("Указываем 'Штат'")
     public PageInputInformationUser openListState(String value){
-        $("#state").click();
+        $("#state").hover().click();
         $("#state").$(byText(value)).click();
         return this;
     }
     @Step("Указываем 'Город'")
     public PageInputInformationUser openListCity(String value){
-        $("#city").click();
+        $("#city").hover().click();
         $("#city").$(byText(value)).click();
         return this;
     }
