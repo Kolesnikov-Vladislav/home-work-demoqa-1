@@ -10,7 +10,7 @@ public class SettingForTest {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1680x1050";
         Configuration.browser = "chrome";
-        Configuration.browserVersion = "110.0";
+        Configuration.browserVersion = "100.0";
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
