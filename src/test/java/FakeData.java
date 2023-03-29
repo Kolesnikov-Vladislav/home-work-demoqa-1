@@ -4,9 +4,8 @@ import pages.PageInputInformationUser;
 import static utils.RegistrationFakeData.randomArray;
 import static utils.RegistrationFakeData.randomInteger;
 
-public class FakeData {
+public class FakeData extends SettingForTest{
     Faker faker = new Faker();
-    PageInputInformationUser pageInputInformationUser = new PageInputInformationUser();
     String[] hobbies = {"Sports", "Reading", "Music"};
     String[] gender = {"Male", "Female", "Other"};
     String[] subjects = {"History", "English", "Arts", "Biology", "Commerce"};

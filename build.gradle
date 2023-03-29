@@ -44,7 +44,7 @@ test {
 }
 task block_test(type: Test) {
     useJUnitPlatform {
-        includeTags("BLOCK")
+        includeTags("block")
     }
 }
 

@@ -1,14 +1,13 @@
 
-import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import pages.PageInputInformationUser;
 
 public class DemoQaTest extends FakeData{
-
-    @Tag("BLOCK")
+    PageInputInformationUser pageInputInformationUser = new PageInputInformationUser();
+    @Tag("block")
     @Test
     void demoQaTest () {
         SelenideLogger.addListener("allure", new AllureSelenide());

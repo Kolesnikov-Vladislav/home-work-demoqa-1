@@ -1,30 +1,22 @@
 package pages;
 
-import com.codeborne.selenide.Configuration;
 import io.qameta.allure.Step;
-import org.junit.jupiter.api.BeforeAll;
 import pages.components.CalendarComponent;
 import pages.components.WindowResultRegistrationComponent;
-import utils.RegistrationFakeData;
 
-import static com.codeborne.selenide.Configuration.browser;
+import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selectors.byText;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class PageInputInformationUser extends RegistrationFakeData {
+public class PageInputInformationUser {
     CalendarComponent calendarComponent = new CalendarComponent();
     WindowResultRegistrationComponent windowResultRegistrationComponent = new WindowResultRegistrationComponent();
-    @BeforeAll
-    public static void beforeAll() {
-        Configuration.browserSize = "1680x1050";
-        Configuration.browser = "Chrome";
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
-    }
+
     @Step("Открываем страницу 'DemoQA.com/automation-practice-form'")
     public PageInputInformationUser openPageInputInformationUser(){
-        open("https://demoqa.com/automation-practice-form");
+        open(baseUrl + "/automation-practice-form");
         return this;
     }
     @Step("Заполняем поле 'Имя'")
