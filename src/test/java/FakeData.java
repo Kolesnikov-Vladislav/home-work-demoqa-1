@@ -12,7 +12,7 @@ public class FakeData extends SettingForTest{
 
     String[] month = {"January", "February ", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"};
-    String[] city = {"Delhi", "Gurgaon"}; //, "Noida"
+    String[] city = {"Delhi", "Gurgaon", "Noida"}; //, "Noida"
     String state = "NCR";
     String pictureStatic = "pictures/ToolForm.png";
     String picture = "ToolForm.png";

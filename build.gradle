@@ -42,15 +42,10 @@ tasks.withType(JavaCompile) {
 
 test {
     useJUnitPlatform()
+    systemProperties(System.getProperties())
 }
 task block_test(type: Test) {
     useJUnitPlatform {
         includeTags("block")
-    }
-}
-
-task remote_test(type: Test) {
-    useJUnitPlatform {
-        includeTags("remote")
     }
 }
