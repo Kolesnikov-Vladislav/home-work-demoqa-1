@@ -49,3 +49,8 @@ task block_test(type: Test) {
         includeTags("block")
     }
 }
+task other_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("other")
+    }
+}
