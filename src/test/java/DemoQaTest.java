@@ -10,7 +10,6 @@ public class DemoQaTest extends FakeData{
     @Tag("block")
     @Test
     void demoQaTest () {
-        SelenideLogger.addListener("allure", new AllureSelenide());
         pageInputInformationUser.openPageInputInformationUser()
                 .firstNameInput(firstNameFake)
                 .lastNameInput(lastNameFake)
