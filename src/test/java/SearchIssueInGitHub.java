@@ -2,6 +2,7 @@ import com.codeborne.selenide.Condition;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
@@ -12,7 +13,7 @@ public class SearchIssueInGitHub {
     @Tag("other")
     public void searchIssueWitchLambda(){
         step("Открываем главную страницу GitHub", () -> {
-            open("https://github.com");
+            open(baseUrl);
         });
         step("Кликаем на 'Поиск'", () -> {
             $(".header-search-input").click();
