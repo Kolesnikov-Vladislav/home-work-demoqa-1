@@ -9,7 +9,7 @@ import static org.openqa.selenium.By.linkText;
 
 public class SearchIssueInGitHub {
     @Test
-    @Tag("")
+    @Tag("other")
     public void searchIssueWitchLambda(){
         step("Открываем главную страницу GitHub", () -> {
             open("https://github.com");
