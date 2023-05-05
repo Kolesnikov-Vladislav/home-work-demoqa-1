@@ -1,0 +1,17 @@
+{
+  "base": {
+    "logo": "",
+    "project": 18-vladislav_kolesnikov-unit12,
+    "environment": "qa.guru",
+    "comment": "Hello! This allert_bot @vladislav_kolesnikov and this result test an ${task} + ${baseUrl}",
+    "reportLink": "https://jenkins.autotests.cloud/job/18-vladislav_kolesnikov-unit12/allure",
+    "language": "ru",
+    "allureFolder": "allure-report/",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "6070771952:AAGmIwhW35hKiFHEqZoaRANzJznwK8_-Ej4",
+    "chat": "-1001853709930",
+    "replyTo": ""
+  }
+}
